@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>TheCockTailDB</title>
+</head>
+<body>
+  <!-- header sectin start -->
+  <header>
+    <!-- navbar section start -->
+    <nav class="navbar navbar-expand-lg" s>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white d-flex align-items-center justify-content-end gap-4">
+            <li>
+              <button class="btn btn-danger btn-sm">Home</button>
+            </li>
+            <li class="nav-item">
+              About
+            </li>
+            <li class="nav-item">
+              Contact
+            </li>
+            <li class="nav-item">
+              Services
+            </li>
+            <li class="nav-item">
+              <input type="text" placeholder="search your data">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar section end -->
+    <!-- bannder section start -->
+    <section id="banner" style="height: 500px;" class="d-flex align-items-center">
+      <div class="container">
+        <div id="bannerItem" class="d-flex align-items-center justify-content-evenly">
+          <img src="./img/cocktail_left.png" style="width: 320px">
+          <div id="middelText" class="text-center text-light">
+            <h4 style="font-size: 30px; font-weight: 900;">Welcome to TheCocktailDB</h4>
+            <p style="font-size: 15px; line-height: 30px; font-weight: 500;">
+              An open, crowd-sourced  of drinks and cocktails around the world.<br>We also offer a free JSON API for anyone use it.<br>If you like the site, please consider supporting us by clicking below...
+            </p>
+            <img src="./img/patreon_logo.png" style="width: 200px; margin-bottom: 10px;"><br>
+            <a href="#" class="text-danger">Click to Support: Currently 363 supporters</a>
+          </div>
+          <img src="./img/cocktail_right.png" style="width: 320px">
+        </div>
+      </div>
+    </section>
+    <!-- bannder section end -->
+  </header>
+  <!-- header sectin end -->
+  <!-- main section start -->
+  <main>
+    <!-- search section start -->
+    <section id="searchSec">
+      <div class="container">
+        <hr>
+        <div class="pt-3 pb-2 text-center">
+          <div class="d-flex gap-2 justify-content-center">
+            <input id="searchText" type="text" placeholder="search your data" class="w-25">
+            <button id="searchBtn" class="btn btn-dange btn-sm bg-danger">Search</button>
+          </div>
+          <ul class="d-flex justify-content-center mt-3 gap-3 text-light">
+            <li><b>Total Drink:</b> <span class="text-danger">635</span></li>
+            <li><b>Total Ingredients:</b> <span class="text-danger">530</span></li>
+            <li><b>Drink Image:</b> <span class="text-danger">1230</span></li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <!-- search section end -->
+    <!-- modal section start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+            <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="modalBody" class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal section end -->
+    <!-- image sectin start -->
+    <sectin id="imageSec">
+      <div class="container">
+        <h2 class="text-center pb-2 text-white">Random Foods Drinks</h2>
+        <!-- message section start -->
+        <section id="message" class="d-none">
+          <div class="container text-center">
+            <p class="text-danger" style="font-size: 35px;">No Data found!Please Search again?</p>
+          </div>
+        </section>
+        <!-- message section end -->
+        <!-- loader section start -->
+        <section id="loader" class="d-none pt-4 pb-3">
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border text-danger" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </section>
+        <!-- loader section end -->
+        <div id="imgItems" class="text-center">
+          <!-- image -->
+        </div>
+        <section id="showAll" class="text-center d-none">
+          <button id="showAllBtn" class="btn btn-danger">showAll</button>
+        </section>
+        <hr>
+      </div>
+    </section>
+    <!-- image sectin end -->
+    <!-- flag section start -->
+    <section id="flagSec">
+      <div class="container">
+        <!-- flag start -->
+        <div>
+          <ul class="d-flex">
+            <li>
+              <img src="./img/flag/gb.png">
+            </li>
+            <li>
+              <img src="./img/flag/us.png">
+            </li>
+            <li>
+              <img src="./img/flag/fr.png">
+            </li>
+            <li>
+              <img src="./img/flag/ca.png">
+            </li>
+            <li>
+              <img src="./img/flag/jm.png">
+            </li>
+            <li>
+              <img src="./img/flag/cn.png">
+            </li>
+            <li>
+              <img src="./img/flag/nl.png">
+            </li>
+            <li>
+              <img src="./img/flag/eg.png">
+            </li>
+            <li>
+              <img src="./img/flag/gr.png">
+            </li>
+            <li>
+              <img src="./img/flag/in.png">
+            </li>
+            <li>
+              <img src="./img/flag/ie.png">
+            </li>
+            <li>
+              <img src="./img/flag/it.png">
+            </li>
+            <li>
+              <img src="./img/flag/jp.png">
+            </li>
+            <li>
+              <img src="./img/flag/kn.png">
+            </li>
+            <li>
+              <img src="./img/flag/my.png">
+            </li>
+            <li>
+              <img src="./img/flag/mx.png">
+            </li>
+          </ul>
+          <ul class="d-flex">
+            <li>
+              <img src="./img/flag/ma.png">
+            </li>
+            <li>
+              <img src="./img/flag/hr.png">
+            </li>
+            <li>
+              <img src="./img/flag/no.png">
+            </li>
+            <li>
+              <img src="./img/flag/pt.png">
+            </li>
+            <li>
+              <img src="./img/flag/ru.png">
+            </li>
+            <li>
+              <img src="./img/flag/ar.png">
+            </li>
+            <li>
+              <img src="./img/flag/es.png">
+            </li>
+            <li>
+              <img src="./img/flag/sk.png">
+            </li>
+            <li>
+              <img src="./img/flag/th.png">
+            </li>
+            <li>
+              <img src="./img/flag/sa.png">
+            </li>
+            <li>
+              <img src="./img/flag/vn.png">
+            </li>
+            <li>
+              <img src="./img/flag/tr.png">
+            </li>
+            <li>
+              <img src="./img/flag/sy.png">
+            </li>
+            <li>
+              <img src="./img/flag/dz.png">
+            </li>
+            <li>
+              <img src="./img/flag/tn.png">
+            </li>
+            <li>
+              <img src="./img/flag/pl.png">
+            </li>
+          </ul>
+        </div>
+        <!-- flag end -->
+        <!-- content start -->
+        <div class="text-center">
+          <h4 class="text-light">Browser Name</h4>
+          <ul class="d-flex justify-content-center gap-2">
+            <li>
+              <span class="text-danger">A</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">B</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">C</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">D</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">E</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">F</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">G</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">H</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">I</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">J</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">K</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">L</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">M</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">N</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">O</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">P</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">Q</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">R</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">S</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">T</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">U</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">V</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">W</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">X</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">Y</span>
+              <span class="text-light">/</span>
+            </li>
+            <li>
+              <span class="text-danger">Z</span>
+            </li>
+          </ul>
+        </div>
+        <!-- content end -->
+      </div>
+    </section>
+    <!-- flag section end -->
+  </main>
+  <!-- main section end -->
+  <!-- footer section start -->
+  <footer class="pt-5 pb-3">
+    <section id="footerSec">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <ul >
+              <li>
+                <a href="#" class="text-white">2023 TheCockTailDB</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">Proudly Build In the BD</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="./img/footerlogo/logo-tcdb.png">
+            <img src="./img/footerlogo/logo-tadb.png">
+            <img src="./img/footerlogo/logo-tsdb.png">
+          </div>
+          <div>
+            <ul class="d-flex align-items-center gap-3">
+              <li>
+                <a href="#" class="text-white">Missing</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- footer section end -->
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

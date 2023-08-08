@@ -1,0 +1,25 @@
+.navbar, footer{
+  background: #1d000d;
+}
+
+#imgItems{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+}
+
+body{
+  background-color: #230312;
+}
+
+a{
+  text-decoration: none;
+}
+
+hr{
+  border: 3px solid white !important;
+}
+
+ul{
+  list-style-type: none;
+}

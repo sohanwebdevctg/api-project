@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- header section start -->
+  <header>
+    <!-- navbar section start -->
+    <section id="navbar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">TastyHut</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">About</a>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-success btn-sm">signIn</button>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- navbar section end -->
+    <!-- banner section start -->
+    <section class="banner">
+      <div class="container">
+        <div style="height: 480px; width: 100%;" class="d-flex justify-content-center align-items-center">
+          <div class="text-center">
+            <h1 class="fw-bold">Text Our Delicious <br>Best Foods</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit necessitatibus illo sequi laudantium nostrum, <br>voluptatum sint doloribus earum eius mollitia.</p>
+            <div class="bg-success w-75 mx-auto p-3 rounded">
+              <input class="p-2 w-75" type="text" placeholder="please input your foods" id="searchData">
+              <button id="searchBtn" class="btn btn-warning p-2">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section end -->
+  </header>
+  <!-- header section end -->
+  <!-- main section start -->
+  <main class="my-5 container">
+    <!-- message section start -->
+    <section id="message" class="d-none">
+      <h1 class="text-danger text-center">No data Found!Please Search Again?</h1>
+    </section>
+    <!-- message section end -->
+    <!-- loader section start -->
+    <section id="loader" class="d-none">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </section>
+    <!-- loader section end -->
+    <!-- cardItems section start -->
+    <section id="cardItems">
+      <div id="cardItem">
+        <!-- card section start -->
+        <!-- card section end -->
+      </div>
+    </section>
+    <!-- cardItems section end -->
+    <!-- showAlls button section start -->
+    <section id="showAlls" class="my-4 d-none">
+      <div class="text-center">
+        <button id="showAllBtn" class="btn btn-warning">showAll</button>
+      </div>
+    </section>
+    <!-- showAlls button section end -->
+  </main>
+  <!-- main section start -->
+  <!-- footer section start -->
+  <footer class="bg-light py-4">
+    <section id="footer">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <h5>section</h5>
+            <ul>
+              <li>Home</li>
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>FAQs</li>
+              <li>About</li>
+            </ul>
+          </div>
+          <div>
+            <h5>section</h5>
+            <ul>
+              <li>ux/ui design</li>
+              <li>Product design</li>
+              <li>Backend Desing</li>
+              <li>Frontend Development</li>
+              <li>Backend Development</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Resource</h5>
+            <ul>
+              <li>FAQs</li>
+              <li>Support</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Subcribe to our newsletter</h5>
+            <ul>
+              <li>
+                <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+              </li>
+              <li>
+                <input type="text">
+                <button class="btn btn-warning btn-sm">Submit</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- footer section end -->
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

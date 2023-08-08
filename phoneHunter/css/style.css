@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0 !important;
+}
+
+ul li{
+  color: rgba(0,0,0,07);
+  padding-top: 7px;
+}
+
+#inputText{
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border: 0px;
+}
+#inputBtn{
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  font-size: 12px;
+}

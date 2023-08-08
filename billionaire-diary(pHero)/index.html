@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Billionaire-diary</title>
+</head>
+<body>
+  <!-- header section start -->
+<header>
+  <div class="container">
+    <!-- header title section start -->
+    <div class="text-center">
+      <h1 class="text-primary-emphasis">Richest by industy</h1>
+      <h4 class="text-secondary">(Technology)</h4>
+    </div>
+    <!-- header title section start -->
+  </div>
+  <!-- logo section start -->
+  <section>
+    <div class="d-flex justify-content-between">
+      <img src="./img/logo/logo.png" width="50px">
+      <img src="./img/logo/logo1.png" width="50px">
+    </div>
+  </section>
+  <!-- logo section start -->
+</header>
+  <!-- header section start -->
+  <!-- main section start -->
+  <main class="mt-4">
+    <!-- modal sectin start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal sectin end -->
+    <!-- personItems section start -->
+    <section id="personSec" class="bg-secondary-subtle p-5">
+      <div class="container">
+        <!-- loader -->
+        <div id="loader" class="mb-4 d-none">
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border text-danger" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+        <!-- personItems -->
+        <div id="personItems">
+          
+        </div>
+        <div id="showAll" class="text-center d-none">
+          <button onclick="showAllBtn()" class="btn btn-dark text-light mt-5">ShowAll</button>
+        </div>
+      </div>
+    </section>
+    <!-- personItems section end -->
+  </main>
+  <!-- main section end -->
+
+
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

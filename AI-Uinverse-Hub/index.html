@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>AI-UINVERSE-HUB</title>
+</head>
+<body>
+  <!-- header section start -->
+  <header>
+      <nav class="navbar navbar-expand-lg bg-danger bg-gradient">
+        <div class="container">
+          <a class="navbar-brand" href="#"><b>AI-UINVERSE-HUB</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link text-white" aria-current="page" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <!-- header section end -->
+  <!-- main section start -->
+  <main>
+  <!-- title section start -->
+  <section id="titleSect" class="py-4">
+    <div class="container text-center">
+      <h1 class="text"><strong>AI UINVERSE HUB</strong></h1>
+      <button class="btn btn-danger">Sort By Data</button>
+    </div>
+  </section>
+  <!-- title section end -->
+  <!-- modal section start -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div id="modalItem" class="modal-dialog modal-dialog-centered">
+      
+    </div>
+  </div>
+  <!-- modal section end -->
+  <!-- card section start -->
+  <section id="card" class="my-4">
+    <div class="container">
+      <!-- spinner section start -->
+      <div id="spinner" class="my-3 d-none">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+      <!-- spinner section end -->
+      <div id="cardItems" class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- all data show in here -->
+      </div>
+    </div>
+  </section>
+  <!-- card section end -->
+  <!-- seeMore section start -->
+  <section id="seeMore" class="py-4 d-none">
+    <div class="container text-center">
+      <button onclick="seeMoreBtn()" class="btn btn-danger">See More</button>
+    </div>
+  </section>
+  <!-- seeMore section end -->
+  </main>
+  <!-- main section end -->
+  <!-- footer section start -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <!-- item1 -->
+        <div>
+          <h5><b>Contact</b></h5>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Contact</li>
+            <li>Helps</li>
+          </ul>
+        </div>
+        <!-- item2 -->
+        <div>
+          <h5><b>Service</b></h5>
+          <ul>
+            <li>Ui/Ux Design</li>
+            <li>Frontend Desing</li>
+            <li>Backend Desing</li>
+            <li>Frontend Development</li>
+            <li>Backend Development</li>
+          </ul>
+        </div>
+        <!-- item3 -->
+        <div>
+          <h5><b>AnyQuestions</b></h5>
+          <ul>
+            <li>FAQs</li>
+            <li>Support 24/7</li>
+            <li>Privacy Policy</li>
+            <li>Terms of service</li>
+            <li>Helps</li>
+          </ul>
+        </div>
+        <!-- item4 -->
+        <div>
+          <h5><b>Show Our Universe</b></h5>
+          <ul>
+            <li>
+              <p>Lorem ipsum dolor sit amet<br> adipisicing elit. Eligendi, et.</p>
+            </li>
+            <li class="d-flex align-items-center">
+              <input type="email" class="me-1">
+              <button class="btn btn-danger btn-sm">click</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

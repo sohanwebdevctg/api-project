@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Phone-Hunter-API(pHero)</title>
+</head>
+<body>
+  <!-- header section start -->
+  <header class="mb-5">
+    <div class="container text-center">
+      <div>
+        <h1 class="text-success">Phone-Hunter-API</h1>
+      </div>
+      <div style="height: 100px;" class="d-flex justify-content-center align-items-center gap-2 bg-light">
+        <input id="searchData" type="text" placeholder="search your phone name" class="w-75">
+        <button id="searchBtn" class="btn btn-sm btn-success">Search</button>
+      </div>
+    </div>
+  </header>
+  <!-- header section end -->
+  <!-- main section start -->
+  <main>
+    <!-- message section start -->
+    <section id="message" class="d-none">
+      <div class="container text-center">
+        <h2 class="text-danger mx-auto">No data show! Please search again?</h2>
+      </div>
+    </section>
+    <!-- message section end -->
+    <!-- modal details section start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div id="modalBox" class="modal-dialog">
+        
+      </div>
+    </div>
+    <!-- modal details section end -->
+    <!-- loader section start -->
+    <section id="loader" class="d-none">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- loader section end -->
+    <!-- card section start -->
+    <section id="cardItems" class="my-5">
+      <div class="container">
+        <!-- cardItem start -->
+        <div id="cardItem" class="row row-cols-1 row-cols-md-3 g-3 p-3 ">
+          <!-- col section start -->
+          <!-- col section end -->
+          
+        </div>
+        <!-- cardItem end -->
+      </div>
+    </section>
+    <!-- card section end -->
+    <!-- showAll button section start -->
+    <section id="showAll" class="d-none">
+      <div class="container text-center pt-1 pb-5">
+        <button id="showAllBtn" class="btn btn-success mx-auto">showAll</button>
+      </div>
+    </section>
+    <!-- showAll button section end -->
+  </main>
+  <!-- main section end -->
+  <!-- footer section start -->
+  <footer>
+    <section class="bg-light py-3">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h5>Contact</h5>
+            <ul>
+              <li>Home</li>
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>FAQs</li>
+              <li>About</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Services</h5>
+            <ul>
+              <li>UI/UX Design</li>
+              <li>FrontEnd Design</li>
+              <li>BackEnd Design</li>
+              <li>FrontEnd Development</li>
+              <li>BackEnd Development</li>
+            </ul>
+          </div>
+          <div>
+            <h5>AnyQuestion</h5>
+            <ul>
+              <li>FAQs</li>
+              <li>Support 24/7</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+              <li>Helps</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Subscribe to our newsetter</h5>
+            <p>Lorem ipsum dolor sit amet,<br>adipisicing elit. Libero, sit.</p>
+            <div class="d-flex justify-content-center gap-1">
+              <input type="text">
+              <button class="btn btn-sm btn-success">Click</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- footer section end -->
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

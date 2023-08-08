@@ -1,0 +1,33 @@
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.banner{
+  background-image:url('../img/banner_1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+#cardItem{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card{
+  width: 540px;
+}
+
+
+ul{
+  list-style-type: none;
+  padding-left: 0 !important;
+}
+ul li{
+  padding-left: 0 !important;
+}
+
